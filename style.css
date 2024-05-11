@@ -14,7 +14,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: red;
     height: 80px;
     box-sizing: border-box;
 }
@@ -42,6 +41,7 @@ nav {
 main {
     display: flex;
     flex-direction: column;
+    padding-top: 80px;
 }
 
 footer {
