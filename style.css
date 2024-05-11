@@ -1,18 +1,49 @@
-html {
-    font-family: Roboto, serif;
+:root {
+    --primary: #012030;
+    --secondary: #13678A;
+    --tertiary: #45C4B0;
+    --background-primary: #DAFDBA;
+    --background-primary-light: #DAFDBA80;
+    --background-primary-ultra-light: #DAFDBA40;
+    --background-secondary: #9AEBA3;
+    --background-secondary-light: #9AEBA380;
+    --background-secondary-ultra-light: #9AEBA340;
 }
+
+html {
+    font-family: Poppins, serif;
+    color: var(--primary);
+}
+
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 24px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
     align-items: center;
     box-sizing: border-box;
+    background: var(--background-primary-light);
+    height: 90px;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 30px;
+    color: var(--secondary);
+}
+
+.logo__title {
+    font-size: 24px;
 }
 
 img {
@@ -24,7 +55,7 @@ img {
 main {
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
+    padding: 114px 24px 24px 24px;
 }
 
 @media (max-width: 500px) {
@@ -42,5 +73,164 @@ Header transition
 }
 
 .scroll#header {
-    top: -80px;
+    top: -90px;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+button.button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 16px 24px;
+    border-radius: 80px;
+    text-transform: uppercase;
+}
+
+.button.button--primary {
+    background: var(--secondary);
+    color: white;
+}
+
+.button.button--secondary {
+    background: white;
+    color: var(--secondary);
+}
+
+
+.flx-ctn {
+    display: flex;
+}
+
+.flx-ctn.flx-ctn--column {
+    flex-direction: column;
+}
+
+.flx-ctn.flx-ctn--gap-16 {
+    gap: 16px;
+}
+
+.flx-ctn.flx-ctn--gap-24 {
+    gap: 24px;
+}
+
+.font-title {
+    font-size: 62px;
+}
+
+/*
+Fonts
+ */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
