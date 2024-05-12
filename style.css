@@ -34,6 +34,10 @@ nav {
     display: flex;
 }
 
+.text-centered {
+    text-align: center;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -55,17 +59,26 @@ img {
     width: auto;
 }
 
+.padding-24 {
+    padding: 24px;
+}
 
 main {
     display: flex;
     flex-direction: column;
 }
 
+section.fake {
+    position: relative;
+    height: 215px;
+    margin-bottom: 72px;
+}
+
 section:first-of-type {
     padding: 114px 24px 24px 24px;
 }
 
-section > div:not(:last-of-type) {
+section > div {
     margin-bottom: 48px;
 }
 
@@ -118,6 +131,20 @@ button.button {
     color: var(--secondary);
 }
 
+.pull {
+    position: absolute;
+}
+
+.pull--up {
+    top: -48px;
+    left: 150px;
+}
+
+.pull--down {
+    bottom: -215px;
+    right: 150px;
+}
+
 .flx-ctn {
     display: flex;
 }
@@ -128,6 +155,10 @@ button.button {
 
 .flx-ctn.flx-ctn--column {
     flex-direction: column;
+}
+
+.flx-ctn.flx-ctn--space-evenly {
+    justify-content: space-evenly;
 }
 
 .flx-ctn.flx-ctn--column.flx-ctn--centered {
@@ -146,9 +177,11 @@ button.button {
     gap: 24px;
 }
 
-
 .flx-ctn.flx-ctn--wrap {
     flex-wrap: wrap;
+}
+
+.flx-ctn.flx-ctn--wrap:not(.flx-ctn--space-evenly) {
     justify-content: center;
 }
 
@@ -161,6 +194,24 @@ button.button {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
+    }
+
+    .pull {
+        height: 250px;
+    }
+
+    .pull--up {
+        top: -48px;
+        left: 48px;
+    }
+
+    .pull--down {
+        bottom: -48px;
+        right: 48px;
+    }
+
+    section.fake {
+        height: 450px;
     }
 }
 
