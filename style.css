@@ -26,7 +26,7 @@ header {
     width: 100%;
     align-items: center;
     box-sizing: border-box;
-    background: #FFFFFF80;
+    background: white;
     height: 90px;
 }
 
@@ -63,6 +63,10 @@ main {
 
 section:first-of-type {
     padding: 114px 24px 24px 24px;
+}
+
+section > div:not(:last-of-type) {
+    margin-bottom: 48px;
 }
 
 /*
@@ -130,6 +134,10 @@ button.button {
     align-items: center;
 }
 
+.flx-ctn:not(.flx-ctn--column).flx-ctn--centered {
+    justify-content: center;
+}
+
 .flx-ctn.flx-ctn--gap-16 {
     gap: 16px;
 }
@@ -138,8 +146,22 @@ button.button {
     gap: 24px;
 }
 
+
+.flx-ctn.flx-ctn--wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .font-title {
     font-size: 62px;
+}
+
+@media (max-width: 550px) {
+    .flx-ctn.mobile--wrap {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /*
