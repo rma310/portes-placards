@@ -28,6 +28,7 @@ header {
     box-sizing: border-box;
     background: white;
     height: 90px;
+    z-index: 1;
 }
 
 nav {
